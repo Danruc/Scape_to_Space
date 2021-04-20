@@ -24,6 +24,10 @@ public class Quest1Transition : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
+<<<<<<< HEAD
+            BotonChecar.quest = true;
+=======
+>>>>>>> main
             SceneManager.LoadScene(sceneToLoad);
         }
     }

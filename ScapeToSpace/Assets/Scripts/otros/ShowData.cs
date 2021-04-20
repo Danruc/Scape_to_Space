@@ -9,9 +9,13 @@ public class ShowData : MonoBehaviour
     {
         GameObject label = GameObject.Find("WelcomeText");
         Text labelText = label.GetComponent<Text>();
-        GameObject sessionDataGO = GameObject.Find("GameController");
-        SessionData sd = sessionDataGO.GetComponent<SessionData>();
-        labelText.text = "Bienvenido/a " + sd.name;
+        GameObject sessionDataGO = GameObject.Find("GameControllerData");
+        //SessionData sd = sessionDataGO.GetComponent<SessionData>();
+        
+        //labelText.text = "Bienvenido/a " + sd.name;
+
+        User u = sessionDataGO.GetComponent<User>();
+        labelText.text = "Bienvenido/a " + u.getName();
     }
 
     // Update is called once per frame
