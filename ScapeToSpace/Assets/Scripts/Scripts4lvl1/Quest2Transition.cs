@@ -8,14 +8,20 @@ public class Quest2Transition : MonoBehaviour
     public string sceneToLoad;
     public static bool Quest = true;
     public GameObject transistor;
+<<<<<<< HEAD
     public GameObject image;
+=======
+>>>>>>> main
 
     void Start()
     {
         if (!Quest)
         {
             transistor.active = !transistor.active;
+<<<<<<< HEAD
             image.active = !image.active;
+=======
+>>>>>>> main
         }
     }
 
@@ -24,7 +30,10 @@ public class Quest2Transition : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
+<<<<<<< HEAD
             BotonChecar.quest = false;
+=======
+>>>>>>> main
             SceneManager.LoadScene(sceneToLoad);
         }
     }

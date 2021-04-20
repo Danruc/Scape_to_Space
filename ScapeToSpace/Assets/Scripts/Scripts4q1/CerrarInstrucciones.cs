@@ -7,6 +7,7 @@ using System;
 public class CerrarInstrucciones : MonoBehaviour
 {
     public GameObject popup;
+<<<<<<< HEAD
     public GameObject prender;
 
 
@@ -21,6 +22,15 @@ public class CerrarInstrucciones : MonoBehaviour
 
         prender.active = !prender.active;
 
+=======
+
+    
+    
+    public void click()
+    {
+        popup.active = !popup.active;
+        CountDownq1.conteo.Empezar();
+>>>>>>> main
     }
     
 }

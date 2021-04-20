@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class QuestIndicator : MonoBehaviour
 {
     public static int quests = 0;
+<<<<<<< HEAD
     public Text qs;
     public GameObject finalTransition;
     public GameObject imagen;
@@ -20,12 +21,29 @@ public class QuestIndicator : MonoBehaviour
             finalTransition.active = !finalTransition.active;
             imagen.active = !imagen.active;
         }
+=======
+    public Text quest;
+    public GameObject finalTransition;
+    // Start is called before the first frame update
+    void Start()
+    {
+        quest = GetComponent<Text>();
+        finalTransition = GetComponent<GameObject>();
+>>>>>>> main
     }
 
     // Update is called once per frame
     void Update()
     {
+<<<<<<< HEAD
         
+=======
+        quest.text = "Pruebas: " + quests + "/2";
+        if(quests == 2)
+        {
+            finalTransition.SetActive(true);
+        }
+>>>>>>> main
 
     }
 }

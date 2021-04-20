@@ -7,6 +7,7 @@ public class EndQuest : MonoBehaviour
 {
     public void completed(string sceneName)
     {
+<<<<<<< HEAD
         FindObjectOfType<AudioManager>().Play("Click");
         QuestIndicator.quests += 1;
         Score.scoreValue += BotonChecar.score;
@@ -25,6 +26,12 @@ public class EndQuest : MonoBehaviour
 
         BotonChecar.x = 0;
         BotonChecar.score = 1000;
+=======
+        QuestIndicator.quests += 1;
+        Quest1Transition.Quest = false;
+        //Score.scoreValue += Quest.acumulative;
+        SceneManager.LoadScene(sceneName);
+>>>>>>> main
     }
 
     public void notcompleted(string sceneName)
